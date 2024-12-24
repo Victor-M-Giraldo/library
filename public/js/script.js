@@ -114,7 +114,6 @@ function addBookToDom(book) {
     bookDiv.appendChild(bookRead);
     bookDiv.appendChild(bookRemove);
     libraryContainer.appendChild(bookDiv);
-    bookDiv.dataset.index = library.indexOf(book);
     bookRemove.addEventListener('click', (e) => {
         library.splice(library.indexOf(book), 1);
         libraryContainer.removeChild(bookDiv);
