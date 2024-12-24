@@ -10,6 +10,26 @@
 </head>
 
 <body>
+    <dialog id="dialog">
+        <form action="" class="add-book-form">
+            <h2 class="form-title">Add a Book</h2>
+            <label for="title" class="form-field-wrapper">
+                Title:
+                <input type="text" id="title" placeholder="Title" required/>
+            </label>
+            <label for="author" class="form-field-wrapper">Author:
+                <input type="text" id="author" placeholder="Author" required/>
+            </label>
+            <label for="pages" class="form-field-wrapper">Pages:
+                <input type="number" id="pages" placeholder="Pages" required min="1"/>
+            </label>
+            <label for="read" class="checkbox-label">
+                <input type="checkbox" id="read" required/>
+                <span>Have you read this book?</span>
+            </label>
+            <button type="submit" id="close-modal" autofocus>Add Book</button>
+        </form>
+    </dialog>
     <header>
         <nav>
             <h1 class="header-text">
@@ -27,4 +47,5 @@
         <p class="footer-text">&copy The Odin Project 2024</p>
     </footer>
 </body>
+
 </html>
